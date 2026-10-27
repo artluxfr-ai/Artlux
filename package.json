@@ -1,0 +1,13 @@
+{
+  "name": "artlux",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site Artlux com pré-visualização de tapetes por IA.",
+  "packageManager": "pnpm@10.28.2",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "python3 sitegen.py",
+    "check": "node --check server.js && node --check app.js && python3 -m py_compile sitegen.py"
+  }
+}
